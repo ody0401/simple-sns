@@ -2,6 +2,15 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
+  compiler: {
+    styledComponents: {
+      ssr: true,
+      displayName: true,
+    },
+  },
+  images: {
+    domains: ['loremflickr.com'],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
